@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="News Homepage worksite for Frontend Mentor Practice Project for learning HTML and CSS Web Development">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="cssreset.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | News Homepage</title>
+
+</head>
+<body>
+  <div class="container">
+  
+    <header>
+      
+      <div class="logo">
+        <img src="/images/logo.svg" alt="Large W Logo for the News Company">
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">New</a>
+        <a href="#">Popular</a>
+        <a href="#">Trending</a>
+        <a href="#">Categories</a>
+      </nav>
+      <div class="nav-container">
+        <input type="checkbox" class="icon-toggle" id="icon-toggle">
+          <label for="icon-toggle" class="hamburger">
+            <span class="icon-bar diag1"></span>
+            <span class="icon-bar horizontal"></span>
+            <span class="icon-bar diag2"></span>
+          </label>
+        <div id="overlay"></div>
+        <div id="hm-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </div>
+      </div>
+        
+    </header>
+
+    <main>
+      <div class="herobox1">
+        <img src="/images/image-web-3-desktop.jpg" alt="Artistic picture of colorful wooden building blocks of various shapes" class="desktop">
+        <img src="/images/image-web-3-mobile.jpg" alt="Artistic picture of colorful wooden building blocks of various shapes" class="mobile">
+        <div class="herotext">
+          <div class="title">
+            <h1>The Bright Future of Web 3.0?</h1>
+          </div>
+          <div class="text">
+            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+            <a href="#" class="mybutton">READ MORE</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="herobox2">
+        <h2>New</h2>
+        <div class="article1">
+          <a href="#">
+            <h3>Hydrogen VS Electric Cars</h3>
+          </a>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+      
+        <div class="article2">
+          <a href="#">
+            <h3>The Downsides of AI Artistry</h3>
+          </a>
+          <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        </div>
+        <div class="article3">
+          <a href="#">
+            <h3>Is VC Funding Drying Up?</h3>
+          </a>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+      </div>
+    </main>
+      <div class="cards">
+        <div class="card">
+          <div class="cardimg">
+            <img src="/images/image-retro-pcs.jpg" alt="Small image of an older desktop computer">
+          </div>
+          <div class="cardtext">
+            <h2>01</h2>
+            <a href="#"><h3>Reviving Retro PCs</h3></a>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="cardimg">
+            <img src="/images/image-top-laptops.jpg" alt="A closeup image of a laptop keyboard">
+          </div>
+          <div class="cardtext">
+            <h2>02</h2>
+            <a href="#"><h3>Top 10 Laptops of 2022</h3></a>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="card desktop">
+          <div class="cardimg">
+            <img src="/images/image-gaming-growth.jpg" alt="An action image of a Playstation 4 controller hovering over a hand">
+          </div>
+          <div class="cardtext">
+            <h2>03</h2>
+            <a href="#"><h3>The Growth of Gaming</h3></a>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+
+</body>
+</html>

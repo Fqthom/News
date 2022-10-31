@@ -1,0 +1,358 @@
+/* ## Colors
+
+###Primary
+
+Soft orange: hsl(35, 77%, 62%)
+Soft red: hsl(5, 85%, 63%)
+
+###Neutral
+
+Off-white: hsl(36, 100%, 99%)
+Grayish blue: hsl(233, 8%, 79%)
+Dark grayish blue: hsl(236, 13%, 42%)
+Very dark blue: hsl(240, 100%, 5%) 
+
+*/
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(36, 100%, 99%);
+    height: auto;
+    width: auto;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 10px;
+}
+header{
+    display: flex;
+    padding: 60px 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a{
+    padding-left: 40px;
+    font-size: 1.125rem;
+    transition-duration: 200ms;
+}
+nav a:hover{
+    color: hsl(5, 85%, 63%);
+    transition-duration: 200ms;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.mobile{
+    display: none;
+}
+.herobox1{
+    width: 67%;
+}
+.herobox1 img{
+    width: 100%;
+    box-sizing: border-box;
+}
+.herotext{
+    display: flex;
+    min-height: 100px;
+    padding-top: 20px;
+}
+.title{
+    width: 50%;
+}
+.text{
+    width: 50%;
+    line-height: 1.75rem;
+    padding: 0 31px;
+}
+.text p{
+    color: hsl(240, 100%, 5%);
+}
+h1{
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: hsl(240, 100%, 5%);
+    padding: 0 20px;
+}
+.mybutton{
+    display: inline-block;
+    background-color: hsl(5, 85%, 63%);
+    font-weight: bold;
+    letter-spacing: 0.125rem;
+    padding: 9px 40px;
+    margin-top: 20px;
+    transition-duration: 500ms;
+}
+.mybutton:hover{
+    background-color: hsl(240, 100%, 5%);
+    transition-duration: 500ms;
+}
+a.mybutton{
+    color: white;
+}
+.herobox2{
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%, 0.80);
+    width: 26%;
+    padding: 30px 20px;
+}
+.herobox2 h2{
+    font-size: 3rem;
+    font-weight: bold;
+    color: hsl(35, 77%, 62%);
+}
+.herobox2 h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.herobox2 p{
+    line-height: 1.25rem;
+}
+.herobox2 a{
+    color: white;
+    transition-duration: 400ms;
+}
+.herobox2 a:hover{
+    color: hsl(35, 77%, 62%);
+    transition-duration: 400ms;
+}
+.article1{
+    border-bottom: 1px solid;
+    border-color: hsla(36, 100%, 99%, 0.595);
+    padding: 40px 0;
+}
+.article2{
+    border-bottom: 1px solid;
+    border-color: hsl(36, 100%, 99%, 0.595);
+    padding: 40px 0;
+}
+.article3{
+    padding: 40px 0 0 0;
+}
+.cards{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;
+}
+.cardimg{
+    height: 140px;
+}
+.cardimg img{
+    height: 100%;
+}
+.cardtext{
+    width: 240px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.cardtext h2{
+    color: rgba(128, 128, 128, 0.548);
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+.cardtext h3{
+    color: hsl(240, 100%, 5%);
+    font-size: 1.25rem;
+    font-weight: 700;
+    transition-duration: 400ms;
+
+}
+.cardtext p{
+    line-height: 1.75rem;
+    color: rgba(128, 128, 128, 0.80);
+    
+}
+.cardtext h3:hover{
+    color: hsl(5, 85%, 63%);
+    transition-duration: 400ms;
+}
+.nav-container{
+    display: none;
+}
+
+@media (max-width: 1190px) {
+
+body{
+    -webkit-tap-highlight-color: transparent;
+}
+nav{
+    display: none;
+}
+header{
+    padding: 40px 10px;
+    position: sticky;
+}
+main{
+    display: block;
+}
+.card.desktop{
+    display: none;
+}
+.herobox1{
+    width: 100%;
+}
+.herobox2{
+    width: 100%;
+    box-sizing: border-box;
+}
+.herotext{
+    display: block;
+    box-sizing: border-box;
+}
+.cardtext p{
+    line-height: 1rem;
+}
+.title, .text{
+    width: 100%;
+    padding: 0;
+}
+.title h1{
+    padding: 0;
+}
+.mybutton{
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;   
+}
+.cards{
+    width: 100%;
+    justify-content: center;
+}
+.card{
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    width: 48%;
+}
+.nav-container{
+    display: inline-block;
+}
+#overlay{
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 300ms, opacity 300ms linear;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+.hamburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    width: 30px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+.icon-bar{
+    position: relative;
+    z-index: 4;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: hsl(240, 100%, 5%);
+    transition: all 300ms;
+}
+.icon-bar + .icon-bar{
+    margin-top: 5px;
+}
+#hm-nav{
+    height: 100%;
+    position: fixed;
+    z-index: 3;
+    right: 0;
+    width: 250px;
+    top: 0px;
+    background: white;
+    transform: translateX(250px);
+    transition: transform 250ms ease-in-out;
+}
+#hm-nav li>a{
+    color: hsl(240, 100%, 5%);
+    font-size: 1.3rem;
+    padding-left: 30px;
+}
+ul:first-child{
+    margin-top: 141px;
+}
+li + li{
+    margin-top: 40px;
+}
+input[type="checkbox"]:checked ~ #hm-nav{
+    transform: translateX(0);
+}
+input[type="checkbox"]:checked ~ #overlay{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 300ms;
+}
+input[type=checkbox]{
+    transition: all 1s;
+    box-sizing: border-box;
+    display: none;
+}
+input[type="checkbox"]:checked ~ .hamburger > .horizontal{
+    transition: all 300ms;
+    opacity: 0;
+}
+input[type="checkbox"]:checked ~ .hamburger > .diag1{
+    transition: all 300ms;
+    transform: translate3d(0,8px,0) rotate(45deg);
+}
+input[type="checkbox"]:checked ~ .hamburger > .diag2{
+    transition: all 300ms;
+    transform: translate3d(0,-8px,0) rotate(-45deg);
+}
+}
+@media (max-width: 630px){
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .cards{
+        margin-top: 20px;
+    }
+    .card{
+        width: 100%;
+    }
+    .card.desktop{
+        display: flex;
+    }
+    .cardtext{
+        width: 100%;
+    }
+    .cardtext h2{
+        font-size: 2.25rem;
+    }
+    .cardtext h3{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 388px) {
+    .cardtext p{
+        font-size: .8rem;
+    }
+    
+}
+@media (max-width:348px) {
+    .cardtext h3{
+        font-size: 1.2rem;
+    }
+}
