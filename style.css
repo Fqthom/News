@@ -18,6 +18,7 @@ body{
     background-color: hsl(36, 100%, 99%);
     height: auto;
     width: auto;
+    -webkit-tap-highlight-color: transparent;
 }
 .container{
     max-width: 1300px;
